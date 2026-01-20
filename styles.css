@@ -6,12 +6,13 @@
 :root {
     --accent: #0805b7;
     --accent-hover: #2b29c4;
+    --outline: #5a5ec9;
 }
 
 body {
     font-family: proggy, Arial, sans-serif;
-    color: white;
     margin: 0;
+    color: white;
     background-image: url(bg_tile.gif);
     background-repeat: repeat;
 }
@@ -25,27 +26,42 @@ body {
 
 .box-content {
     border: 2px solid #777;
-    padding: 40px 60px;
-    font-size: 1.2rem;
-    min-width: 300px;
+    padding: 50px 80px 40px;
+    font-size: 1.4rem;
+    min-width: 380px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .box-title {
-    position: relative;
+    position: absolute;
+    top: -0.9em;
     left: 50%;
     transform: translateX(-50%);
     background: transparent;
-    width: max-content;
-    padding: 0 10px;
-    top: 1.8em;
+    padding: 0 14px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
 .accent {
     color: var(--accent);
+    text-shadow:
+        -1px -1px 0 var(--outline),
+         1px -1px 0 var(--outline),
+        -1px  1px 0 var(--outline),
+         1px  1px 0 var(--outline);
 }
 
 #title:hover {
     color: var(--accent-hover);
+}
+
+.box-content p {
+    margin: 0;
+    text-shadow:
+        -1px -1px 0 var(--outline),
+         1px -1px 0 var(--outline),
+        -1px  1px 0 var(--outline),
+         1px  1px 0 var(--outline);
 }
