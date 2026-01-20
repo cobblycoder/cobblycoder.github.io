@@ -6,7 +6,6 @@
 :root {
     --accent: #0805b7;
     --accent-hover: #2b29c4;
-    --outline: #5a5ec9;
 }
 
 body {
@@ -15,6 +14,7 @@ body {
     color: white;
     background-image: url(bg_tile.gif);
     background-repeat: repeat;
+    text-align: center;
 }
 
 #about {
@@ -26,42 +26,28 @@ body {
 
 .box-content {
     border: 2px solid #777;
-    padding: 50px 80px 40px;
-    font-size: 1.4rem;
+    padding: 45px 70px;
     min-width: 380px;
-    text-align: center;
-    box-sizing: border-box;
+    background: #191919;
+    font-size: 1.35rem;
 }
 
 .box-title {
-    position: absolute;
-    top: -0.9em;
+    position: relative;
+    top: 1.65em;
     left: 50%;
     transform: translateX(-50%);
-    background: transparent;
-    padding: 0 14px;
-    font-size: 1.5rem;
+    width: max-content;
+    padding: 0 8px;
+    background: #191919;
+    font-size: 1.15rem;
     cursor: pointer;
 }
 
 .accent {
     color: var(--accent);
-    text-shadow:
-        -1px -1px 0 var(--outline),
-         1px -1px 0 var(--outline),
-        -1px  1px 0 var(--outline),
-         1px  1px 0 var(--outline);
 }
 
 #title:hover {
     color: var(--accent-hover);
-}
-
-.box-content p {
-    margin: 0;
-    text-shadow:
-        -1px -1px 0 var(--outline),
-         1px -1px 0 var(--outline),
-        -1px  1px 0 var(--outline),
-         1px  1px 0 var(--outline);
 }
