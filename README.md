@@ -1,2 +1,2 @@
 # cobblycoder.github.io
-my website
+my website, mostly taken from atmosphere.wtf
